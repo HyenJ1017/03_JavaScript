@@ -4,7 +4,7 @@
   padding: 0px;
 }
 
-div, section, table {border: 1px solid black;}
+/* div, section, table {border: 1px solid black;} */
 
 body {
   display: flex;
@@ -14,24 +14,36 @@ body {
 }
 
 header{
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF0000;
 }
 main{
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  background-color: #FFE8C5;
 }
 footer{
+  width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: #97BE5A;
+  min-height: 100px;
+  padding: 15px;
+  position: sticky;
+  bottom: -50px;
+  z-index: 1;
 }
-#sidbar{
+.sidbar{
   width: 75px;
   height: 350px;
   border-radius: 10px;
@@ -42,11 +54,35 @@ footer{
   display: flex;
   flex-direction: column;
 }
+.sidbar2{
+  width: 300px;
+  height: 200px;
+  background-color: rgba(127, 255, 212, 0.336);
+  position: absolute;
+  top: 30px;
+  left: -350px;
+  border-radius: 5px;
+  padding: 10px;
+}
 /* *************************** */
 /* header */
+h1{
+  font-family: RixInooAriDuriR;
+  margin: 50px 0 10px;
+  color: wheat;
+  letter-spacing: 8px;
+  text-shadow: black 5px 5px 3px;
+}
 
-
-
+h2 {
+  font-family: HancomSans-Light;
+  font-size: 2em;
+  margin: 50px 100px 30px;
+}
+h3 {
+  font-family: HancomSans-Light;
+  font-size: 1.2em;
+}
 
 
 
@@ -62,20 +98,77 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+#ulTitle{
+  text-align: center;
+  display: inline;
+}
+
+#tb1, #ulTitle, #seasoningList{
+  margin: 10px;
+}
+
+tr>td:first-child{text-align: right; padding: 0 40px 0 0;}
+
+tr>td:last-child{padding: 0 0 0 10px;}
+
+td{height: 2.5em;}
+
+td, th {background-color: rgba(255, 255, 255, 0.726);}
+
+#problemChild{ height: 1em; }
+
+#td1 {
+  width: 200px;
+}
+#td2 {
+  width: 110px;
+}
+#td3 {
+  width: 130px;
 }
 
 .sectdiv1{
   width: 750px;
   min-height: 300px;
   margin: 30px;
+  padding: 10px;
+  background-color: #FFA27F;
+  border: 1px solid orangered;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 3px;
 }
 
+#mainDiv1, #mainDiv5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.tbTitle{
+  font-size: 1.2em;
+}
 
+#mainDiv2, #mainDiv3, #mainDiv4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.sectdiv1 > h3 {
+  align-self: center;
+  margin: 50px 100px 50px;
+}
 
+.buyInput{width: 100px;}
 
+.sidbar2 > div {
+  margin: 12px 0 0;
+}
 
+#mainDiv5 > h2 {margin: 20px 0 10px 0;}
 
 /* *************************** */
 /* sidebar */
@@ -96,6 +189,7 @@ footer{
 .sidDiv > a{color: black; text-decoration-line: none;}
 
 
+
 /* *************************** */
 /* footer */
 
@@ -109,5 +203,30 @@ footer{
 
 /* *************************** */
 
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'HancomSans-Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.sectdiv1 img {
+  width: 300px;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+
+.sectdiv1 > div {
+  width: 302px;
+  display: flex;
+  align-items: center;
+}
 

@@ -9,40 +9,178 @@
 <body id="body">
   
   <header>
-    <h1>제목</h1>
+    <h1>COOK PAGE</h1>
+    <h2 style="color: whitesmoke;">01_제육볶음 만들기</h2>
   </header>
 
   <main>
     <section id="sect1">
-      <div class="sectdiv1" id="mainDiv1"></div>
-      <div class="sectdiv1" id="mainDiv2"></div>
-      <div class="sectdiv1" id="mainDiv3"></div>
-      <div class="sectdiv1" id="mainDiv4"></div>
+
+      <div class="sectdiv1" id="mainDiv1">
+        <h2>필요한 재료!</h2>
+        <hr width="400px">
+        <table id="tb1">
+          <caption class="tbTitle">재료</caption>
+          <thead id="thead1">
+            <tr>
+              <th id="td1">재료</th>
+              <th id="td2">input</th>
+              <th id="td3">output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>돼지고기<br>앞다리살 or 목살</td>
+              <td>150g</td>
+              <td>약 330 kcal</td>
+            </tr>
+            <tr>
+              <td>양파</td>
+              <td>1/4개</td>
+              <td>약 10 kcal</td>
+            </tr>
+            <tr>
+              <td>대파</td>
+              <td>1/4줄</td>
+              <td>약 5 kcal</td>
+            </tr>
+            <tr>
+              <td rowspan="2">청양고추</td>
+              <td id="problemChild">1개</td>
+              <td rowspan="2">약 5 cal</td>
+            </tr>
+            <tr>
+              <td id="problemChild">선택사항</td>
+            </tr>
+            <tr>
+              <td>다진마늘</td>
+              <td>1작은숟가락</td>
+              <td>약 5 kcal</td>
+            </tr>
+            <tr>
+              <td>식용유</td>
+              <td>1큰숟가락</td>
+              <td>약 120 kcal</td>
+            </tr>
+            <tr>
+              <td>맛</td>
+              <td>맛있음</td>
+              <td>- 475 kcal</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">총계</td>
+              <td>0 cal</td>
+            </tr>
+          </tfoot>
+
+        </table>
+      <hr width="400px">
+      <div class="tbTitle" id="ulTitle">양념</div>
+
+      <div id="seasoningList">
+    <ul>
+      <li>고추장 1큰술</li>
+      <li>고춧가루 1큰술</li>
+      <li>간장 1큰술</li>
+      <li>설탕 1작은숟갈</li>
+      <li>맛술 1큰술(선택사항)</li>
+      <li>참기름 1작은숟갈</li>
+      <li>후추 약간</li>
+    </ul>
+        </div>
+      </div>
+
+      <div class="sectdiv1" id="mainDiv2">
+        <div>
+          <img src="../images/pork1.png" alt="포크1">
+        </div>
+        <h3>돼지고기는 얇게 썰어줍니다.</h3>
+      </div>
+
+      <div class="sectdiv1" id="mainDiv3">
+        <h3>야채도 얇게 썰어줍니다.</h3>
+        <div>
+          <img src="../images/leek.png" alt="릭1">
+        </div>
+      </div>
+
+      <div class="sectdiv1" id="mainDiv4">
+        <h3>준비된 재료와 양념을 넣고 볶으면</h3>
+      </div>
+
+      <div class="sectdiv1" id="mainDiv5">
+        <h2>!! 완성 !!</h2>
+        <div>
+          <img src="../images/pork2.png" alt="포크2">
+        </div>
+      </div>
+
+      
+      <section class="sidbar2">
+
+        <h3>*주문 링크*</h3>
+
+        <div>
+          <label for="input1">돼지고기</label>
+          <input type="number" id="input1" class="buyInput">
+          <span>kg&nbsp;</span><a href="https://www.coupang.com/np/search?component=&q=%EB%8F%BC%EC%A7%80%EA%B3%A0%EA%B8%B0&channel=user" type="_blank"><button>구매</button></a>
+        </div>
+
+        <div>
+          <label for="input2">양파</label>
+          <input type="number" id="input2" class="buyInput">
+          <span>망&nbsp;</span><a href="https://www.coupang.com/np/search?component=&q=%EC%96%91%ED%8C%8C&channel=user" type="_blank"><button>구매</button></a>
+        </div>
+        
+        <div>
+          <label for="input3">대파</label>
+          <input type="number" id="input3" class="buyInput">
+          <span>kg&nbsp;</span><a href="https://www.coupang.com/np/search?component=&q=%EB%8C%80%ED%8C%8C&channel=user" type="_blank"><button>구매</button></a>
+        </div>
+        
+        <div>
+          <label for="input4">청양고추</label>
+          <input type="number" id="input4" class="buyInput">
+          <span>g&nbsp;</span><a href="https://www.coupang.com/np/search?component=&q=%EC%B2%AD%EC%96%91%EA%B3%A0%EC%B6%94&channel=user" type="_blank"><button>구매</button></a>
+        </div>
+        
+      </section>
+  
     </section>
   </main>
 
-  <section id="sidbar">
+  <section class="sidbar">
     <div class="sidDiv" id="side1">
       <a href="#body">TOP</a>
     </div>
     <div class="sidDiv" id="side2">
-      <a href="#body">1</a>
+      <a href="#mainDiv1">1</a>
     </div>
     <div class="sidDiv" id="side3">
-      <a href="#body">2</a>
+      <a href="#mainDiv2">2</a>
     </div>
     <div class="sidDiv" id="side4">
-      <a href="#body">3</a>
+      <a href="#mainDiv3">3</a>
     </div>
     <div class="sidDiv" id="side5">
-      <a href="#body">4</a>
+      <a href="#mainDiv4">4</a>
     </div>
     <div class="sidDiv" id="side6">
       <a href="#footer">END</a>
     </div>
   </section>
-  
-  <footer id="footer"></footer>
+
+  <footer id="footer">
+    <div>
+      <pre>
+        출처
+        폰트 2: RixInooAriDuriR : <a href="https://noonnu.cc/font_page/962">noonnu.cc/font_page</a>
+        폰트 2: HancomSans-Light : <a href="https://noonnu.cc/font_page/1423">noonnu.cc/font_page</a>
+      </pre>
+    </div>    
+  </footer>
 
 
 </body>
