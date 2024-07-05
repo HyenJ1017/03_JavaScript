@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>07_반복문</title>
+  <link rel="stylesheet" href="../css/07_반복문.css">
   <style>
     pre > code {
       border: 3px solid black;
@@ -76,27 +77,217 @@
   <h4>3부터 30까지 3의 배수만 출력하기</h4>
   <button onclick="check7()">확인7</button>
 
+  <h4>1부터 20까지 4의 배수만 출력하고 합계도 구하기</h4>
+  <button onclick="check8()">확인8</button>
 
+  <h4>입력받은 범위 내 지정된 배수 출력 및 합계 구하기...</h4>
+  <div>
+    시작 : <input type="number" id="start9">
+    <br>
+    종료 : <input type="number" id="end9">
+    <br>
+    배수 : <input type="number" id="multiple9">
+    <br>
+    <button onclick="check9()">확인9</button>
+  </div>
 
+  <h4>입력 받은 단(2~9)의 구구단 출력하기</h4>
+  <pre>
+    ex)
+    2 x 1 = 2   n x 1 =1n
+    2 x 2 = 4   n x 2 =2n
+    2 x 3 = 6   n x 3 =3n
+    ...         ...
+    2 x 8 =16   n x 8 =8n
+    2 x 9 =18   n x 9 =9n
+  </pre>
+  <div>
+    <input type="number" id="dan10">단
+    <button onclick="check10()">구구단 출력</button>
+  </div>
 
+  <h4>10 부터 1까지 1씩 감소하며 출력하기</h4>
+  <button onclick="check11()">확인11</button>
 
+  <h4>입력 받은 단 거꾸로 출력하기</h4>
+  <div>
+    <input type="number" id="dan12">단
+    <button onclick="check12()">구구단 출력</button>
+  </div>
 
+  <h4>특정배수마다 지정된 모양으로 출력하기</h4>
+  <pre>
+    - 1~ 20, 1씩 증가하는 반복문
+    - 한 줄당 숫자 10개씩만 출력
 
+    hint > innerHTML 사용
+    -> 대입되는 HTML 태그 문자열을 해석하는특징이 있음
 
+    [출력화면]
+    배수지정 : 5
+    출력모양 : @
 
+    1 2 3 4 @ 6 7 8 9 @
+    11 12 13 14 @ 16 17 18 19 @
+  </pre>
+  <div>
+    배수 지정 : <input type="number" id="input13">
+    <br>
+    출력 모양 : <input type="text" id="output13">
+    <button onclick="check13()">확인13</button>
+    <!-- 결과출력란 -->
+    <p id="result13"></p>
+  </div>
 
+  <h4>연습 CSS 적용</h4>
+  <div>
+    배수 지정 : <input type="number" id="input99">
+    <button onclick="check99()">확인99</button>
+    <p id="result99"></p>
+  </div>
 
+  <hr>
+  <h1>중첩 반복문(2중for문)</h1>
 
+  <pre>
+    - 반복문 내에 반복문이 작성된 형태
 
+    [작성법]
+    <code>
+      for(초기식1 ; 조건식1 ; 증감식1){
+  
+        for(초기식2 ; 조건식2 ; 증감식2){
+        
+        }
+  
+      }
+    </code>
+  </pre>
 
+  <h4>다음 모양 출력하기1</h4>
+  <pre>
+    1234
+    1234
+    1234
+    1234
+  </pre>
+  <button onclick="check14()">확인14</button>
+  
+  <h4>다음 모양 출력하기2</h4>
+  <pre>
+    12345
+    12345
+    12345
+    12345
+  </pre>
+  <button onclick="check15()">확인15</button>
+ 
+  <h4>다음 모양 출력하기3</h4>
+  <pre>
+    654321
+    654321
+    654321
+  </pre>
+  <button onclick="check16()">확인16</button>
+  <br>
+  <span id="span16"></span>
+  
+  <h4>다음 모양 출력하기4</h4>
+  <pre>
+    1
+    12 
+    123
+    1234
+  </pre>
+  <button onclick="check17()">확인17</button>
+  <br>
+  <span id="span17"></span>
+  
+  <h4>다음 모양 출력하기5</h4>
+  <pre>
+    *
+    **
+    ***
+    ****
+  </pre>
+  <button onclick="check18()">확인18</button>
+  <br>
+  <span id="span18"></span>
 
+  <h4>다음 모양 출력하기6</h4>
+  <pre>
+    12345
+    1234
+    123
+    12
+    1
+  </pre>
+  <button onclick="check19()">확인19</button>
+  <br>
+  <span id="span19"></span>
+  
+  <hr>
+  <!-- 
+    숫자 누적 == 합계
+    문자열 누적 == 이어쓰기
+    숫자 세기 == 카운트(count) -> 몇개? 몇번?
+    -->
+  <h3>1부터 30 사이의 정수 중 4의 배수의 갯수 구하기</h3>
+  <button onclick="check20()">확인20</button>
+  
+  <h3>1부터 100 사이의 정수 중 입력받은 값의 배수가 몇개인지</h3>
+  <input type="number" id="input21">
+  <button onclick="check21()">확인21</button>
+  
+  <h3>count를 이용해 다음 모양 출력하기</h3>
+  <pre>
+    1 2 3 4
+    5 6 7 8
+    9 10 11 12
+  </pre>
+  <button onclick="check22()">확인22</button>
+  <br>
+  <span id="span22"></span>
+  
+  
+  <hr><hr>
+  <h1>while문 (조건식이 만족하는 동안)</h1>
+  
+  <pre>
+    - 긑이 정확하게 정해져 있지 않은 경우 주로 사용하는 반복문
+    ex) 
+    for문 : 1~10까지 3의배수
+    while문 : 1부터 3의배수가 3번나올때까지?
+    -> 몇 회 반복을 해야될 지 모르겠지만 반복은 하고싶을 때
+    
+    [작성법]
+    <code>
+      while (조건식){
+        조건식이 true인 경우 반복 수행;
+      }
+    </code>
+  </pre>
+  
+  <h3>0이 입력될 때 까지 입력된 값 *누적하기</h3>
+  <button onclick="check23()">확인23</button>
 
+  <h3>메뉴 주문하기</h3>
+  <!-- while + count + switch -->
 
+  <ol>
+    <li>김밥 : 4000</li>
+    <li>라면 : 4500</li>
+    <li>돈까스 : 9000</li>
+  </ol>
+  <strong style="color: red;">취소 클릭시 주문 완료</strong>
+  <button onclick="check24()">주문확인24</button>
 
-
-
-
-
+  <ul id="result24">
+    <li>김밥(5개) : 20000원</li>
+    <li>라면(2개) : 9000원</li>
+    <li>돈까스(1개) : 9000원</li>
+    <li>합계 : 38000원</li>
+  </ul>
 
   <script src="../js/07_반복문.js"></script>
 </body>
