@@ -139,7 +139,3 @@ function startGame() {
 
   }
 }
-
-
-
-
