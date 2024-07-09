@@ -162,3 +162,57 @@ function cssTest1(){
   const test1 = document.querySelector('[target-div = css-div] > div');
   test1.style.fontSize = "30px"
 }
+
+
+
+/* ****************************************************************** */
+/* 카카오톡 채팅 만들기 */
+function readValue(){
+
+  /* 채팅이 출력되는 화면 */
+  const bg = document.querySelector('#chattingBackground');
+
+  /* 채팅이 입력되는 input */
+  const input = document.querySelector("#userInput");
+
+  /* 입력된 값이 없을경우
+  1) 진짜로 작성을 않했다.
+  2) 작성된 내용이 모두 공백 문자(띄어쓰기 탭 엔터)
+
+  문자열.trim() : 문자열 좌우 공백을 제거(중간공백 X)(trim :: 다듬다)
+  */
+  if(input.value.trim().length === 0){
+    alert("채팅 내용을 입력해 주세요");
+    input.value = '';                     // input value에 ''을 넣어서 공백으로 만듬
+    input.focus();                        // input에 다시 커서를 올림
+    return;                               // 함수를 즉시 종료하고 호출한 곳으로 돌아감
+  }
+
+  /* 입력된 값을 읽어와 채팅 화면에 누적 */
+  bg.innerHTML += `<p><span>${input.value}</span></p>`;
+
+  input.value = '';                       //이전 입력 내용 제거
+
+  input.focus();                          // input에 다시 커서를 올림
+
+  /* 스크롤막대 상단 = 스크롤 전체 깊이중 가장 깊은곳까지 */
+  // bg.scrollTop : 스크롤 막대 높은곳
+  // bg.scrollTop = 값 : 스크롤 막대 상단을 값 부분까지 이동
+  // bg.scrollHeight : 스크롤 높이
+  bg.scrollTop = bg.scrollHeight;
+
+}
+
+
+/* #userInput 에서 키보드로 값 입력 중
+  "Enter" 입력이 감지되는 경우 readValue()함수 호출
+*/
+document.querySelector("#userInput").addEventListener("keydown", function(e){
+
+  /* 콘솔에서 입력된 키 확인하는 방법 */
+  // console.log(e.key);
+
+  if(e.key === "Enter"){
+    readValue();  // 함수호출
+  }
+});
