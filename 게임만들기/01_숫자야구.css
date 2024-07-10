@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  margin: 100px 0 50px 0;
+}
+
+#aroundBorder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/* 점수판 */
+#scoreTable{
+  border: 3px solid black;
+}
+
+#scoreTable *{
+  border: 1px solid black;
+}
+
+#scoreTable td{
+  text-align: center;
+}
+
+#scoreTable th:first-child{
+  width: 80px;
+}
+#scoreTable th:nth-of-type(2){
+  width: 150px;
+}
+#scoreTable th:nth-of-type(3){
+  width: 150px;
+}
+#scoreTable th:nth-of-type(4){
+  width: 150px;
+}
+
+/* 숫자입력판 */
+#inputDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+}
+
+.inputNumber{
+  width: 120px;
+  height: 120px;
+  font-size: 50px;
+  text-align: center;
+  background-color: gray;
+  border: 1px dotted yellow;
+}
+
+.numberBox{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 70px;
+  margin: 5;
+}
+
+.udBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  flex-grow: 1;
+  margin: 10px;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.udBtn:hover{
+  background-color: rgb(99,99,99);
+  cursor: pointer;
+}
+
+/* 조작판 */
+#btnDiv > button{
+  width: 160px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}

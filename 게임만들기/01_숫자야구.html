@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01_게임 만들기</title>
+  <link rel="stylesheet" href="01_숫자야구.css">
+</head>
+
+<body>
+  
+  <section id="aroundBorder">
+
+    <h1>숫자야구</h1>
+
+    <!-- 점수판 -->
+    <div class="divBox" id="score">
+      <table id="scoreTable">
+        <tr>
+          <th>회차</th>
+          <th>S</th>
+          <th>B</th>
+          <th>시도</th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 계획 -->
+    <div class="divBox" id="preDiv">
+      <pre>
+        1. 게임시작시 1~9 난수 4개 설정
+        2. 숫자확인시
+          - 입력한 숫자가1 ~ 9 사이의 숫자가 아니면 alert
+          - strike 확인,
+            자릿수,숫자 일치시 S++
+            4s일 시 게임 완료 alert, reset
+          - ball 확인,
+            숫자 일치, 자릿수 불일치 b++
+          - 점수판에 숫자 확인 및 횟수 누적
+        3. 리셋 누르면 초기화
+      </pre>
+    </div>
+
+    <!-- 숫자입력판 -->
+    <div class="divBox" id="inputDiv">
+      <input type="number" class="inputNumber" name="number1">
+      <div class="numberBox" id="NumberBox1">
+        <div class="udBtn" id="up1">up</div>
+        <div class="udBtn" id="down1">down</div>
+      </div>
+      <input type="number" class="inputNumber" name="number2">
+      <div class="numberBox" id="NumberBox2">
+        <div class="udBtn" id="up2">up</div>
+        <div class="udBtn" id="down2">down</div>
+      </div>
+      <input type="number" class="inputNumber" name="number3">
+      <div class="numberBox" id="NumberBox3">
+        <div class="udBtn" id="up3">up</div>
+        <div class="udBtn" id="down3">down</div>
+      </div>
+      <input type="number" class="inputNumber" name="number4">
+      <div class="numberBox" id="NumberBox4">
+        <div class="udBtn" id="up4">up</div>
+        <div class="udBtn" id="down4">down</div>
+      </div>
+    </div>
+
+    <!-- 조작판 -->
+    <div class="divBox" id="btnDiv">
+      <button id="start">게임시작</button>
+      <button id="reset">리셋</button>
+      <button id="check">숫자확인</button>
+    </div>
+
+  </section>
+
+<script src="01_숫자야구.js"></script>
+</body>
+
+</html>
