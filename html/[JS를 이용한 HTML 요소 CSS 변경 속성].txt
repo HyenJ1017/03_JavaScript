@@ -46,3 +46,5 @@ fontFamily      ->  글꼴
 fontSize        ->  글꼴 크기
 fontWeight      ->  글꼴 굵기
 fontStyle       ->  글꼴 스타일(italic)
+
+여기 없는건 검색하면 나옵니당 ㅎㅎ

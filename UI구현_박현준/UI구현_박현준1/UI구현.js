@@ -1,17 +1,13 @@
-const start = document.querySelector('.button1');
+const inputColor = document.querySelector('.inputTc');
+const inputBc = document.querySelector('.inputBc');
+const Output = document.querySelector('.outSpan');
 
 
-start.onclick=function(){
+function btn1(){
 
-  const Output = document.querySelector('.outSpan');
-  const inputColor = document.querySelector('.inputTc');
-  const inputBc = document.querySelector('.inputBc');
-
-  const numbers = document.querySelectorAll(".input1");
-
-  Output.style.width=`${numbers[0].value}px`;
-  Output.style.height=`${numbers[1].value}px`;
-  Output.style.fontSize=`${numbers[2].value}px`;
+  Output.style.width=`${document.getElementById("inputWidth").value}px`;
+  Output.style.height=`${document.getElementById("inputHeight").value}px`;
+  Output.style.fontSize=`${document.getElementById("inputFontSize").value}px`;
   
   Output.style.color=inputColor.value;
   Output.style.backgroundColor=inputBc.value;

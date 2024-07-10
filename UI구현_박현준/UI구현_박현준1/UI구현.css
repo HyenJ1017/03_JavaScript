@@ -46,12 +46,6 @@ body > section{
   flex-grow: 0;
 }
 
-label{
-  border-right: 1px solid gray;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .inputName{
   display: inline-block;
   width: 110px;
@@ -80,7 +74,6 @@ label{
   display: flex;
   justify-content: center;
 }
-
 
 /* 출력박스 */
 .mainSct{
