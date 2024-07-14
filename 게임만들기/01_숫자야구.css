@@ -2,16 +2,24 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
+  background-image: url(images/baseball.png);
+  /* 이미지 설정 */
+  background-size: cover;
+  background-position:top; 
+  background-repeat: no-repeat;
 }
 
 h1{
   margin: 100px 0 50px 0;
+  font-size: 3em;
 }
 
 #aroundBorder{
@@ -19,15 +27,20 @@ h1{
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  width: 1200px;
+  min-height: 1000px;
+  margin: 200px 0 0 0;
 }
 
 /* 점수판 */
 #scoreTable{
-  border: 3px solid black;
+  border: 3px solid beige;
 }
 
 #scoreTable *{
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 #scoreTable td{
@@ -46,6 +59,11 @@ h1{
 #scoreTable th:nth-of-type(4){
   width: 150px;
 }
+/* 메뉴판 */
+#preDiv{
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 40px;
+}
 
 /* 숫자입력판 */
 #inputDiv{
@@ -53,7 +71,7 @@ h1{
   flex-direction: row;
   justify-content: center;
   border: 3px solid black;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.95);
   padding: 30px;
 }
 
@@ -63,7 +81,12 @@ h1{
   font-size: 50px;
   text-align: center;
   background-color: gray;
-  border: 1px dotted yellow;
+  border: 5px dotted yellow;
+}
+
+.inputNumber:hover{
+  background-color: rgb(50,50,50);
+  cursor: pointer;
 }
 
 .numberBox{
@@ -86,7 +109,7 @@ h1{
 }
 
 .udBtn:hover{
-  background-color: rgb(99,99,99);
+  background-color: rgb(50,50,50);
   cursor: pointer;
 }
 
@@ -96,4 +119,10 @@ h1{
   height: 50px;
   font-weight: bold;
   font-size: 18px;
+  color: black;
+}
+
+#btnDiv > button:hover{
+  background-color: rgb(150,150,150);
+  cursor: pointer;
 }
