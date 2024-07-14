@@ -72,7 +72,7 @@ check.onclick=function(){
   console.log(goal);
   /* 시작버튼 안누름 */
   if(goal[0] == goal[1]){
-    alert("게임시작 버튼을 누르셔야 합니다");
+    alert("먼저, 게임시작 버튼을 누르셔야 합니다");
     return;
   }
   
