@@ -42,6 +42,8 @@ startBtn.addEventListener("click", () => {
   recordBtn.disabled = false;
 });
 
+/* ************************************************************ */
+
 /* 시계 화면 출력 함수 */
 function output (){
 
